@@ -1,4 +1,4 @@
-package multithread.introduction1;
+package multithread.introduction;
 
 
 import java.util.concurrent.Executors;

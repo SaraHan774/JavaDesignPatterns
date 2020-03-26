@@ -3,6 +3,7 @@ Introduction 01 Java 언어의 쓰레드
 
 Introduction 02 멀티 쓰레드 프로그램의 평가기준
 
+[2020-03-27]
 Chapter 01. Single Threaded Execution - 이 다리를 건널 수 있는 사람은 오직 한 명
 - Single Threaded Execution 패턴
 - 예제 프로그램 1 : Single Threaded Execution 패턴을 사용하지 않는 예
@@ -13,6 +14,7 @@ Chapter 01. Single Threaded Execution - 이 다리를 건널 수 있는 사람�
 - 보강 1 : synchronized에 대해 생각해 봅시다
 - 보강 2 : java.util.concurrent 패키지와 계수 Semaphore
 
+[2020-03-28]
 Chapter 02. Immutable - 망가뜨리고 싶어도 망가지지 않는다
 - Immutable 패턴
 - 예제 프로그램
@@ -22,6 +24,7 @@ Chapter 02. Immutable - 망가뜨리고 싶어도 망가지지 않는다
 - 보강 1 : final
 - 보강 2 : 컬렉션 클래스와 멀티 쓰레드
 
+[2020-03-29]
 Chapter 03. Guarded Suspension- 준비가 될 때까지 기다려 주세요
 - Guarded Suspension 패턴
 - 예제 프로그램
@@ -29,6 +32,7 @@ Chapter 03. Guarded Suspension- 준비가 될 때까지 기다려 주세요
 - 생각의 폭을 넓히기 위한 힌트
 - 관련 패턴
 
+[2020-03-30]
 Chapter 04. Balking - 필요 없으면 관둬요
 - Balking 패턴
 - 예제 프로그램
@@ -37,6 +41,7 @@ Chapter 04. Balking - 필요 없으면 관둬요
 - 관련 패턴
 - 보강 : 타임아웃
 
+[2020-03-31]
 Chapter 05. Producer-Consumer - 내가 만들고 당신이 사용한다
 - Producer-Consumer 패턴
 - 예제 프로그램
@@ -46,6 +51,7 @@ Chapter 05. Producer-Consumer - 내가 만들고 당신이 사용한다
 - 보강 1 : 예외 InterruptedException
 - 보강 2 : java.util.concurrent 패키지와 Producer-Consumer 패턴
 
+[2020-04-01]
 Chapter 06. Read-Write Lock - 다 같이 읽는 것은 상관없지만 읽는 중간에 쓰면 안돼요
 - Read-Write Lock 패턴
 - 예제 프로그램
@@ -54,6 +60,7 @@ Chapter 06. Read-Write Lock - 다 같이 읽는 것은 상관없지만 읽는 �
 - 관련 패턴
 - 보강 : java.util.concurrent.locks 패키지와 Read-Write Lock 패턴
 
+[2020-04-02]
 Chapter 07. Thread-Per-Message - 이 일을 부탁해요
 - Thread-Per-Message 패턴
 - 예제 프로그램
@@ -63,6 +70,7 @@ Chapter 07. Thread-Per-Message - 이 일을 부탁해요
 - 보강 1 : 프로세스와 쓰레드
 - 보강 2 : java.util.concurrent 패키지와 Thread-Per-Message 패턴
 
+[2020-04-03]
 Chapter 08. Worker Thread - 일이 올 때까지 기다리고, 일이 오면 작업한다
 - Worker Thread 패턴
 - 예제 프로그램
@@ -72,6 +80,8 @@ Chapter 08. Worker Thread - 일이 올 때까지 기다리고, 일이 오면 작
 - 보강 1 : Swing의 이벤트·디스패칭 쓰레드
 - 보강 2 java.util.concurrent 패키지와 Worker Thread 패턴
 
+
+[2020-04-04]
 Chapter 09. Future - 먼저 교환권을 받으세요
 - Future 패턴
 - 예제 프로그램
@@ -80,6 +90,7 @@ Chapter 09. Future - 먼저 교환권을 받으세요
 - 관련 패턴
 - 보강 : java.util.concurrent 패지키와 Future 패턴
 
+[2020-04-05]
 Chapter 10. Two-Phase Termination - 뒷정리를 하고 나서 자도록 해요
 - Two-phase Termination 패턴
 - 예제 프로그램
@@ -89,6 +100,7 @@ Chapter 10. Two-Phase Termination - 뒷정리를 하고 나서 자도록 해요
 - 보강 1 : 인터럽트 상태와 예외 InterruptedException의 상호 변환
 - 보강 2 : java.util.concurrent 패키지와 쓰레드의 동기
 
+[2020-04-06]
 Chapter 11. Thread-Specific Storage - 쓰레드마다 락커를 가진다
 - Thread-Specific Storage 패턴
 - java.lang.ThradLocal 클래스에 대하여
@@ -99,6 +111,7 @@ Chapter 11. Thread-Specific Storage - 쓰레드마다 락커를 가진다
 - 관련 패턴
 - 보강 : 액터 베이스와 태스크 베이스
 
+[2020-04-07]
 Chapter 12. Active Object - 비동기 메시지를 맞이하는 능동적인 객체
 - Active Object 패턴
 - 예제 프로그램
@@ -106,6 +119,7 @@ Chapter 12. Active Object - 비동기 메시지를 맞이하는 능동적인 객
 - 생각의 폭을 넓히기 위한 힌트
 - 관련 패턴
 - 보강 : java.util.concurrent 패키지와 Active Object 패턴
+
 
 Chapter 13. 총정리 - 멀티 쓰레드 프로그래밍 패턴 랭귀지
 - 멀티 쓰레드 프로그래밍 패턴 랭귀지
