@@ -32,3 +32,10 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
     이들을 Building 하는 과정은 각기 다른 CarBuilder, MotorCycleBuilder 등 에서 담당한다. 
     * 단점 : 코드의 중복이 많다. Mutable Object 를 원할 경우 이 패턴을 사용해서는 안된다. 객체를 
     생성한 후 수정하는 것이 불가능 - 혹은 불편 - 하기 때문이다. 
+    
+    
+### Java 언어로 배우는 디자인 패턴 입문 (멀티쓰레드 편) 
+* [Table of Contents(TXT File)](./src/multithread/table-of-contents.txt)
+0. [2020-03-26 Introduction](./src/multithread/notes/1-java-threads.md)
+    * 요약 : Java 의 Thread 패키지, Concurrent 패키지에 대해서 알아본다. 스레드의 기본 개념 및 생명 주기에 대해 알아본다. 
+    멀티스레드 프로그램의 평가 요소에 대해서 알아본다. 
