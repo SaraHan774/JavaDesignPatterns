@@ -33,10 +33,40 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
     * 단점 : 코드의 중복이 많다. Mutable Object 를 원할 경우 이 패턴을 사용해서는 안된다. 객체를 
     생성한 후 수정하는 것이 불가능 - 혹은 불편 - 하기 때문이다.
     
-* Proxy Pattern 
+* [Proxy Pattern](./src/proxy)
+    * [Proxy Pattern 설명](./src/proxy/proxy-pattern.md)
+    * 핵심 : 실제 객체의 (Concrete Object) 생성 비용이 높을 때 Proxy(대리인) 를 두어서 
+    객체를 필요할 때만 생성하도록 하고, 객체의 메서드 또한 대리인을 통해 호출하는 방식이다. 
+    한 클래스를 다른 클래스에 대한 인터페이스로서 사용하고자 할 때 사용하는 방법이다. 
+    * 프록시에는 다양한 종류가 있다. (Virtual Proxy, Smart Reference, Remote Proxy, Protection Proxy ...)  
 
-* Decorator Pattern  
-    
+* [Decorator Pattern](./src/decorator)
+    * [Decorator Pattern 설명](./src/decorator/decorator-pattern.md)
+    * 핵심 : 상속 기법을 사용하지 않고 객체의 기능을 확장하고 싶을 때 객체에 새로운 
+    기능을 부여할 수 있는 Decorator 를 사용한다. 
+* ⁉ Decorator Pattern 예시 설명 ⁉
+    * `ConcreteComponent`는 우리가 최초로 작성하는 클래스를 나타낸다. 
+    이 클래스를 통해 다양한 객체를 찍어낼 것인데, 직접적으로 `ConcreteComponent`클래스를
+    상속받아서 객체를 만드는 것이 아니라 중간에 `abstract class AbstractDecorator` 를 추가해서 
+    해당 추상 클래스가 `ConcreteComponent`가 상속받았던 `Component`라는 Abstract 클래스를 
+    상속하도록 한다. 이 데코레이터 클래스에는 컴포넌트 객체를 넣어서 초기화 한 후, 
+    컴포넌트의 기능인 `doJob()`메서드를 실행시킬 수 있는 메서드가 오버라이드 되어있다.
+    * 최초로 작성한 ConcreteComponent 클래스로부터 상속받아 
+    ConcreteDecoratorEx_1 과 같은 클래스를 만드는 것이 아니라, AbstractDecorator 
+    를 상속받아서 클래스를 작성한다. 그러면 원래의 객체가 갖던 doJob()메서드를 `super.doJob()`
+    을 통해 실행할 수 있고, 새롭게 오버라이드된 `doJob()`메서드에다가 더 다양한 기능을 
+    추가할 수 있다.
+    * 뿐만 아니라 Ex_2 라는 객체를 만들어서 Ex_1 으로부터 또 다시 기능을 확장할 수 있다. 
+
+```
+*** Decorator Pattern Demo ***
+I am concrete component. I am closed for modification
+I am explicitly from Ex_1
+I am concrete component. I am closed for modification
+I am explicitly from Ex_1
+I am explicitly from Ex_2
+END Ex_2
+```
     
 ### Java 언어로 배우는 디자인 패턴 입문 (멀티쓰레드 편) 
 * [Table of Contents(TXT File)](./src/multithread/table-of-contents.txt)

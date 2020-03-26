@@ -33,11 +33,11 @@ original object 를 참조해야 한다) 실제 객체의 완전한 생성이 �
 ### Note 
 Proxy 의 다른 종류들은 뭐가 있는가? 
 <br/>
-Mainly we are familiar with the following types :
+Mainly we are familiar with trehe following types :
 <br/> 
 * Remote Proxies : 다른 주소 공간에 있는 실제 객체를 숨긴다. 
 * Virtual Proxies : 필요에 따라서 heavy object 를 생성하는 등 최적화 기법을 수행할 
 때 사용된다. 
 * Protection Proxies : 각기 다른 접근 권한이 있을 때 사용된다. 
 * Smart Reference : 객체가 접근되었을 때 추가적인 house keeping work 를 할 수 있다. 
-전형적인 연산으로는 실제 객체에 대한 참조의 개수를 헤아리는 것이 있다.   
+전형적인 연산으로는 실제 객체에 대한 참조의 개수를 헤아리는 것이 있다. K  
