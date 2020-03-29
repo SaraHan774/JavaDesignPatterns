@@ -67,6 +67,11 @@ I am explicitly from Ex_1
 I am explicitly from Ex_2
 END Ex_2
 ```
+
+* [Composite Pattern](./src/composite)
+    * [Composite Pattern 설명](./src/composite/composite-patterns.md)
+    * 핵심 : 객체들간의 상-하 관계를 구조화 하고 싶을 때 사용되는 패턴이다. 
+    계층에 속한 요소들을 동적으로 추가, 삭제할 수 있다. 
     
 ### Java 언어로 배우는 디자인 패턴 입문 (멀티쓰레드 편) 
 * [Table of Contents(TXT File)](./src/multithread/table-of-contents.txt)
