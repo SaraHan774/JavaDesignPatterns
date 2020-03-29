@@ -28,6 +28,33 @@ GUI 기반의 툴킷에서 border 속성을 더하고 싶다고 가정하자. �
 ### UML Diagram 
 ![decoratorPattern](./decorator-pattern-uml.png)
 
+
+### ⁉ Decorator Pattern 예시 설명 ⁉
+* `ConcreteComponent`는 우리가 최초로 작성하는 클래스를 나타낸다. 
+이 클래스를 통해 다양한 객체를 찍어낼 것인데, 직접적으로 `ConcreteComponent`클래스를
+상속받아서 객체를 만드는 것이 아니라 중간에 `abstract class AbstractDecorator` 를 추가해서 
+해당 추상 클래스가 `ConcreteComponent`가 상속받았던 `Component`라는 Abstract 클래스를 
+상속하도록 한다. 이 데코레이터 클래스에는 컴포넌트 객체를 넣어서 초기화 한 후, 
+컴포넌트의 기능인 `doJob()`메서드를 실행시킬 수 있는 메서드가 오버라이드 되어있다.
+* 최초로 작성한 ConcreteComponent 클래스로부터 상속받아 
+ConcreteDecoratorEx_1 과 같은 클래스를 만드는 것이 아니라, AbstractDecorator 
+를 상속받아서 클래스를 작성한다. 그러면 원래의 객체가 갖던 doJob()메서드를 `super.doJob()`
+을 통해 실행할 수 있고, 새롭게 오버라이드된 `doJob()`메서드에다가 더 다양한 기능을 
+추가할 수 있다.
+* 뿐만 아니라 Ex_2 라는 객체를 만들어서 Ex_1 으로부터 또 다시 기능을 확장할 수 있다. 
+
+
+### Output
+```
+*** Decorator Pattern Demo ***
+I am concrete component. I am closed for modification
+I am explicitly from Ex_1
+I am concrete component. I am closed for modification
+I am explicitly from Ex_1
+I am explicitly from Ex_2
+END Ex_2
+```
+
 ### Note 
 **Decorator Pattern 을 사용했을 때 얻는 이점은 ?** 
 <br/>
