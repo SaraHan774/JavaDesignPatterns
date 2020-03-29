@@ -23,7 +23,7 @@ GoF 의 정의 : 부분 - 전체 계층 구조를 표현하기 위해 객체를 
 컴퓨터 학과의 한 명의 강사가 은퇴한다고 하자. 우리는 이 시나리오를 아래와 같은 단순한 예제로 나타내었다.
 
 ### UML Diagram 
-![compositePattern](./composite-pattern.png) 
+![compositePattern](composite-pattern-uml.png) 
 
 
 ### Output 
@@ -54,6 +54,7 @@ Dr.Som is the Principal
 4. 만약 child ordering 을 다루도록 강요되는 상황이라면 (e.g. parse trees as components)
 우리는 그 순서를 유지하기 위해 특별한 조치를 취해야 한다. 
 <br/><br/>
+
 **What is the best data structure to store components?** 
 <br/>
 보편적인 규칙은 없다. 어떠한 요구사항이 주어지느냐에 따라 달라진다. (예를들어, 효율성 등). 
