@@ -62,6 +62,11 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
     
 ### Java 언어로 배우는 디자인 패턴 입문 (멀티쓰레드 편) 
 * [Table of Contents(TXT File)](./src/multithread/table-of-contents.txt)
-0. [2020-03-26 Introduction](./src/multithread/notes/1-java-threads.md)
+0. [2020-03-26 Introduction](src/multithread/notes/0-java-threads.md)
     * 요약 : Java 의 Thread 패키지, Concurrent 패키지에 대해서 알아본다. 스레드의 기본 개념 및 생명 주기에 대해 알아본다. 
     멀티스레드 프로그램의 평가 요소에 대해서 알아본다. 
+    
+1. [Single Threaded Execution Pattern](src/multithread/singlethreadexecution/single-threaded-execution.md)
+    * 요약 : 멀티 쓰레디드 프로그래밍의 어려움을 알아본다. 자바의 synchronized 키워드에 대해서 구체적으로 이해한다. 
+    데드락이 발생하는 조건과 실제 데드락이 발생하는 코드를 수정하는 방법을 알아본다. 
+    
