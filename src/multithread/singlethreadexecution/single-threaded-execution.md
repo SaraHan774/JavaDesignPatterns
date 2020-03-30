@@ -37,16 +37,8 @@ name 이나 address 의 필드를 바꾸었기 때문이다.
 * **디버그를 표시하는 코드 자체가 쓰레드 세이프가 아니면 잘못된 디버그 표시를 할 수 있기 때문.**
 
 ### 소스 리뷰는 안전성을 확보하는 가장 효과적인 방법이다. 
- |A|B|C|D|
-| ------------- |:-------------:| -----:| -----:|
-|Thread "Alice"|Thread "Bobby"|this.name |this.address
-|this.counter++|this.counter++|(이전의 값)|(이전의 값)
-| |this.name=name|"Bobby"|(이전의 값)
-|this.name=name| |"Alice"|(이전의 값)
-|this.address=address|this.address=address|"Alice"|"Alaska"
-| | |"Alice"|"Brazil"
-|check();|check();|"Alice"|"Brazil"
-| | |`****BROKEN****`| 
+
+![AliceAndBob](./alice-and-bob.png)
 
 * 위와 같이 코드의 어느 단계에서 쓰레드가 꼬였는지 조사해보는 것이 소스 리뷰이다.
 * 시간은 위에서 아래로 흐른다. 
