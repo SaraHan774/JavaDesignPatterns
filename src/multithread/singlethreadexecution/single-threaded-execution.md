@@ -169,3 +169,11 @@ public void eat(){
     synchronized(pair){ ... }
 }
 ```
+
+### 문제 1-7 => 3장 학습 후 풀기. 
+
+<br/><br/>
+
+##Semaphore 클래스 사용하기 
+* 예시의 결과가 책과는 좀 다른데, 어쩔 수 없는 부분 ... 
+* [Semaphore 예시 코드](./SemaphoreEx.java)
