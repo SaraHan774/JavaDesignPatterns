@@ -1,4 +1,40 @@
-### Java Design Patterns 
+## Java Design Patterns
+
+### Categorization of Patterns
+* _From Rohit Joshi's Java Design Patterns : Reusable Solutions to Common Problems_ 
+
+####  Creational Patterns
+* 객체의 초기화 과정을 디자인 하기 위해서 사용되는 패턴들. 
+* 이 패턴들은 상속을 통해 객체의 생성 과정을 다양하게 만든다. 
+* 두 개의 자주 등장하는 테마들 
+    1. 시스템에서 어떤 concrete class 를 사용하는가에 대한 정보를 캡슐화한다. 
+    2. 이 클래스들의 인스턴스들이 어떻게 생성되고 조립되는지에 대한 과정을 숨긴다. 
+* 결과적으로 creational pattern 들은 무엇이 생성되고, 누가 이를 생성하고, 어떻게 이를 생성하고, 
+언제 생성되는지에 대한 유연성을 제공한다. 
+
+#### Structural Patterns 
+* 더 큰 구조를 구성하기 위해서 클래스와 객체들이 어떻게 작성되는지와 관련된 패턴들이다. 
+* 상속을 통해서 인터페이스를 작성하거나 구현한다. 
+* 간단한 예로, 다중 상속이 어떻게 두 개 이상의 클래스들을 하나로 합치는지 생각해 보라. 
+결과적으로 나오는 클래스는 부모 클래스의 속성들을 물려받은 클래스이다. 
+* 이 패턴은 특히 독립적으로 작성된 클래스들의 라이브러리들이 같이 작동하도록 할 때 유용하다. 
+* 인터페이스를 작성하거나 혹은 구현을 하는 대신, 이 패턴은 객체들이 새로운 기능을 갖기 위해서 
+어떻게 해야 하는지에 대한 방법들을 묘사한다. object composition 에의 유연성은 run-time 에 
+composition 을 바꿀 수 있는 능력에서 오는데, 이는 static class composition 에서는 절대로 불가능한 것이다. 
+
+#### Behavior Patterns
+* 이 패턴은 객체들 간의 책임 할당과 (객체들 사이의 관계를 묘사한) 알고리즘에 초점을 맞춘다. 
+* 객체들 혹은 클래스들의 패턴을 묘사할 뿐만 아니라 그들 사이의 소통의 패턴 또한 묘사한다. 
+* 이 패턴들은 매우 복잡한 control flow 를 구체화 하는데, 이는 보통 run-time 에 파악하기 어려운 flow 들이다. 
+* 복잡한 flow of control 에 집중하는 대신 어떻게 객체들이 상호 연관되어 있는지에 집중하도록 해준다.
+* inheritance 대신 object composition 을 많이 사용한다. 
+* 객체들간의 관계가 형성되려면 서로가 서로에 대한 참조를 갖고 있어야 하는데 이는 coupling 을 강화시키는 
+결과를 초래한다. 극단적으로 모든 객체들이 서로에 관해 알게 될 수 도 있다. 
+* Mediator 패턴은 peer 객체들 간에 중개자를 소개함으로써 이 문제점을 해소한다. 이로써 loose coupling 을 달성할 수 있다.
+
+![listOfPatterns](./list-of-patterns.png) 
+
+### (1) Vaskaran Sarcar's Java Desing Patterns  
 From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with 
 23 Gang of Design Patterns in Java***
 
@@ -60,9 +96,10 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
     * 핵심 : 객체들간의 상-하 관계를 구조화 하고 싶을 때 사용되는 패턴이다. 
     계층에 속한 요소들을 동적으로 추가, 삭제할 수 있다. 
     
-### Java 언어로 배우는 디자인 패턴 입문 (멀티쓰레드 편) 
-* [Table of Contents(TXT File)](./src/multithread/table-of-contents.txt)
-0. [2020-03-26 Introduction](src/multithread/notes/0-java-threads.md)
+### (2) Java 언어로 배우는 디자인 패턴 입문 (멀티쓰레드 편) 
+* [Table of Contents (TXT File)](./src/multithread/table-of-contents.txt)
+
+0. [Introduction](src/multithread/notes/0-java-threads.md)
     * 요약 : Java 의 Thread 패키지, Concurrent 패키지에 대해서 알아본다. 스레드의 기본 개념 및 생명 주기에 대해 알아본다. 
     멀티스레드 프로그램의 평가 요소에 대해서 알아본다. 
     
