@@ -106,4 +106,18 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
 1. [Single Threaded Execution Pattern](src/multithread/singlethreadexecution/single-threaded-execution.md)
     * 요약 : 멀티 쓰레디드 프로그래밍의 어려움을 알아본다. 자바의 synchronized 키워드에 대해서 구체적으로 이해한다. 
     데드락이 발생하는 조건과 실제 데드락이 발생하는 코드를 수정하는 방법을 알아본다. 
+    * **핵심 : 인스턴스의 상태를 변경/참조하는 부분에 Critical Section 을 설계하고 거기에 항상 한 개의 
+    스레드만 통과할 수 있도록 하는 것.**
+    
+2. [Immutable - 망가뜨리고 싶어도 망가지지 않는다](src/multithread/immutable/immutable.md)
+    * 핵심 : 인스턴스가 새애성된 후에는 상태가 절대 변하지 않는 클래스. 그 클래스의 메서드에는 
+    복수의 메서드가 동시에 액세스 해도 무방하다. 메서드를 synchronized 할 필요 없다. 
+    * 적용 상황 
+        * 상태의 변화가 없는 경우 
+        * 공유 / 빈번한 액세스 있는 경우 
+    * 클래스 하나에 mutable, immutable 한 것이 섞여 있는 경우 이를 두 개로 나누어 보자. 
+    이 둘을 상호 변환이 가능하도록 만들어 보자. 
+        * 예시 : String, StringBuffer 클래스. String 은 immutable 하고, StringBuffer 는 mutable 하다. 
+        한편 String 에는 StringBuffer 를 인수로 받는 생성자가 있고, StringBuffer 도 String 을 인자로 받는
+        생성자가 있다. SB와 S는 서로 상호 변환이 가능하다. 
     
