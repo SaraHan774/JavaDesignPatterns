@@ -112,3 +112,76 @@ public class StringEx {
 ```
 
 ### 문제 2-3 (수행 능력의 비교)
+* synchronized 대신 Immutable 을 사용하면 수행 능력이 얼마나 향상되는지 알아보는 프로그램 
+* [PerformanceCompareEx.java](./PerformanceCompareEx.java)
+* Output : 
+```
+Not Synchronized : BEGIN 
+Not Synchronized : END 
+Elapsed Time = 371ms
+Synchronized : BEGIN 
+Synchronized : END 
+Elapsed Time = 17397ms
+```
+
+### 문제 2-4 (setter 메소드가 없는데도 immutable 이 되지 않는다)
+* [NoSetterEx.java](./NoSetterEx.java)
+```
+    public static void main(String[] args) {
+        //User Info 클래스는 왜 Immutable 이 아닌가?
+        UserInfo userInfo = new UserInfo("Sara", "Huam-dong");
+        System.out.println(userInfo);
+
+        System.out.println(userInfo.getInfo().replace(0, 2, "CHANGED"));
+        //User Info 의 필드가 StringBuffer 로 선언되어 있기 때문에 여전히 수정 될 수 있으므로. 
+        System.out.println(userInfo);
+    }
+```
+* Output : 
+```
+UserInfo{info=info name = Sara address = Huam-dong}
+CHANGEDfo name = Sara address = Huam-dong
+UserInfo{info=CHANGEDfo name = Sara address = Huam-dong}
+```
+
+### 문제 2-5 (immutable 인지 아닌지의 판단)
+* [Line.java](./Line.java)
+* Line 클래스는 immutable 인가? : 정답은 아니다. 
+* Point 클래스를 통해서 x, y 값들을 변경할 수 있으므로 immutable 이 아니다. 
+
+* [TestCode](./LineTest.java)
+```
+public class LineTest {
+
+    public static void main(String[] args) {
+
+        Point sPoint = new Point(3, 4);
+        Point ePoint = new Point(30, 40);
+
+        Line line = new Line(sPoint, ePoint);
+        System.out.println(line);
+        sPoint.x = 123;
+        sPoint.y = 234;
+        ePoint.x = 300;
+        ePoint.y = 4000;
+        System.out.println(line);
+    }
+}
+```
+* Output : 
+```
+Line{startPoint=Point{x=3, y=4}, endPoint=Point{x=30, y=40}}
+Line{startPoint=Point{x=123, y=234}, endPoint=Point{x=300, y=4000}}
+```
+
+### 문제 2-6 (mutable 한 인스턴스에서 immutable 한 인스턴스를 만든다)
+```
+public ImmutablePerson(MutablePerson person){
+        //여러개의 스레드를 만들어서 각 스레드에서 MutablePerson 객체를 통해 Immutable Person 객체를 
+        //만들기를 시도하는 경우 person 인자값에 다른 스레드가 접근할 수 있게 되어서 getter 의 
+        //결과가 안전하지 않게 된다. 
+        this.name = person.getName();
+        this.address = person.getAddress();
+    }
+
+```

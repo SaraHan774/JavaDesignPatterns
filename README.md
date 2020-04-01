@@ -110,7 +110,7 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
     스레드만 통과할 수 있도록 하는 것.**
     
 2. [Immutable - 망가뜨리고 싶어도 망가지지 않는다](src/multithread/immutable/immutable.md)
-    * 핵심 : 인스턴스가 새애성된 후에는 상태가 절대 변하지 않는 클래스. 그 클래스의 메서드에는 
+    * 핵심 : 인스턴스가 생성된 후에는 상태가 절대 변하지 않는 클래스. 그 클래스의 메서드에는 
     복수의 메서드가 동시에 액세스 해도 무방하다. 메서드를 synchronized 할 필요 없다. 
     * 적용 상황 
         * 상태의 변화가 없는 경우 
