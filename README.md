@@ -34,7 +34,7 @@ composition 을 바꿀 수 있는 능력에서 오는데, 이는 static class co
 
 ![listOfPatterns](./list-of-patterns.png) 
 
-### (1) Vaskaran Sarcar's Java Desing Patterns  
+### (1) Vaskaran Sarcar's Java Design Patterns  
 From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with 
 23 Gang of Design Patterns in Java***
 
