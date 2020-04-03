@@ -120,4 +120,7 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
         * 예시 : String, StringBuffer 클래스. String 은 immutable 하고, StringBuffer 는 mutable 하다. 
         한편 String 에는 StringBuffer 를 인수로 받는 생성자가 있고, StringBuffer 도 String 을 인자로 받는
         생성자가 있다. SB와 S는 서로 상호 변환이 가능하다. 
-    
+
+3. [Guarded Suspension - 준비가 될 때까지 기다려 주세요](src/multithread/guardedsuspension/guarded-suspension-pattern.md)
+    * 핵심 : 가드 조건이 충족될 때 까지 기다렸다가, 조건이 충족되면 요청된 처리를 한다. 
+    * 주로 while (가드 조건의 논리부정) { wait() } 을 하고, 깨우는 쪽에서 notifyAll() 을 호출하는 식이다. 

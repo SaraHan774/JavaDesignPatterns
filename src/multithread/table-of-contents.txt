@@ -14,7 +14,7 @@ Chapter 01. Single Threaded Execution - 이 다리를 건널 수 있는 사람�
 - 보강 1 : synchronized에 대해 생각해 봅시다
 - 보강 2 : java.util.concurrent 패키지와 계수 Semaphore
 
-[2020-03-31-TUES]
+[2020-03-31-TUES] ✔ DONE
 Chapter 02. Immutable - 망가뜨리고 싶어도 망가지지 않는다
 - Immutable 패턴
 - 예제 프로그램
