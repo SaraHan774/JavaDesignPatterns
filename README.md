@@ -38,7 +38,11 @@ composition 을 바꿀 수 있는 능력에서 오는데, 이는 static class co
 From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with 
 23 Gang of Design Patterns in Java***
 
-* Ch2. Observer Pattern 
+* [Ch2. Observer Pattern](./src/observer)
+    * 예시 코드 : [Observer Pattern Practice](./src/observer/ObserverPatternPractice.java)
+    * Java 의 내장 Observable 클래스의 상속, Observer 인터페이스의 구현을 통해 연습해 보았다. 
+    * 고객에게 Trending Movie의 정보를 업데이트 받도록 MovieObservable을 subscribe 하도록 하고,
+    MovieInfo 가 업데이트 될 때 마다 업데이트 내역을 보여주는 프로그램이다.    
 
 * Ch3. Singleton Pattern 
 
