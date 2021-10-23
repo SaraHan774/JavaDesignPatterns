@@ -102,7 +102,12 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
     * 핵심 : 생성할 객체들이 비슷한 경우 약간씩의 Customizing 만 해주면 된다. 
     이 때 Factory 를 통해 객체를 생성하고, 외부에서 객체의 다른 속성들을 customizing 해준다.
 
-* Ch18. Mediator Pattern 
+* **Ch18. Mediator Pattern**
+  * Centralized Communication 
+  * **서브 시스템이 허브(중간 클래스)로 소통하고, 이를 다른 서브 시스템들로 전달하는 방식** 
+  * 서브 시스템들이 서로에 대해서 알 필요가 없다. 
+  * 예를 들어서, Air Traffic Controller 가 있을 때, 각 Airplane 들은 서로에 대해 알지 못하고, ATC 로 바로 소통한다. 
+  * Centralizes complex communications and control between related objects. 
 
 * [Ch21. Composite Pattern](./src/composite)
     * [Composite Pattern 설명](./src/composite/composite-patterns.md)
