@@ -1,5 +1,9 @@
 package orilley.chapter1;
 
+import orilley.chapter1.model.Balloon;
+import orilley.chapter1.model.Clown;
+import orilley.chapter1.model.SquareBalloon;
+
 public class Strategy {
 
     public static void main(String[] args) {

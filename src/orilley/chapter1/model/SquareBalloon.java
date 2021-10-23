@@ -1,4 +1,6 @@
-package orilley.chapter1;
+package orilley.chapter1.model;
+
+import orilley.chapter1.ScoreAlgorithmBase;
 
 public class SquareBalloon extends ScoreAlgorithmBase {
     @Override

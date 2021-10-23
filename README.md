@@ -135,8 +135,6 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
 
 ### Strategy Pattern
 
-- [link](./src/orilley/Strategy.java)
-
 - ScoreBoard 
   - calculateScore() 
   - showScore() 
@@ -152,3 +150,5 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
 - 문제점 : 상속 받은 클래스 중 하나가 다른 child class 들과는 다른 메소드를 사용해야 할때 ... (변경해야 할 지점이 많아진다. not good.)
 
 - Strategy Pattern 을 사용하면 각 객체에 타게팅 된 계산을 할 수 있다. 
+
+#### Payment system example (Strategy)
