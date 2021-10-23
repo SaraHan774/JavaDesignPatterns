@@ -69,7 +69,14 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
     * Object Adapter : 인터페이스를 구현한 클래스의 객체를 생성자로 받아서 `this.IObj.Imethod()`의 
     기능을 수정하는 방식으로 작동한다. 
     
-* Ch11. Facade Pattern
+* **Ch11. Facade(파사드) Pattern**
+  * 퍼사드(프랑스어: façade[fəˈsɑːd] 영어: facade) 패턴(외관 패턴)은 소프트웨어 공학 디자인 패턴 중 하나이다. 객체 지향 프로그래밍 분야에서 자주 쓰인다. Facade (외관)는 "건물의 정면"을 의미한다.
+  * Computer 는 여러가지 다양한 서브 시스템으로 이루어져 있다. 
+  * Cpu, hard drive, memory, monitor, mouse ... 
+  * 컴퓨터는 아주 복잡한 시스템이기 때문에 여러가지 컴포넌트들을 모아서 만들어야 한다. 
+  * 이 때 각 컴포넌트들을 별개로 만들면 ... 상황이 복잡해진다. 이런 경우 파사드 디자인 패턴을 사용할 수 있다. 
+  * 한 우산 아래에 여러 컴포넌트들을 만들어 놓고, 클라이언트가 파사드라는 미들맨을 통해서 각 컴포넌트에 접근할 수 있도록 한다. 
+  * Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use. 
     
 * [Ch14. State Pattern](./src/state)
     * [State Pattern 설명](./src/state/state-pattern.md)
