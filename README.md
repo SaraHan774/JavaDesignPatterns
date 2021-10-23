@@ -128,3 +128,27 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
 3. [Guarded Suspension - 준비가 될 때까지 기다려 주세요](src/multithread/guardedsuspension/guarded-suspension-pattern.md)
     * 핵심 : 가드 조건이 충족될 때 까지 기다렸다가, 조건이 충족되면 요청된 처리를 한다. 
     * 주로 while (가드 조건의 논리부정) { wait() } 을 하고, 깨우는 쪽에서 notifyAll() 을 호출하는 식이다. 
+
+---
+
+# 오라일리 출판 강의 
+
+### Strategy Pattern
+
+- [link](./src/orilley/Strategy.java)
+
+- ScoreBoard 
+  - calculateScore() 
+  - showScore() 
+    - Balloon 
+      - calculateScore() 
+    - Clown
+      - calculateScore()
+    - SquareBalloon 
+      - calculateScore()
+
+- naive approach : 각 클래스에서 다른 방법으로 calculateScore 해야 하므로 상속을 받아서 override 하여 구현한다.
+
+- 문제점 : 상속 받은 클래스 중 하나가 다른 child class 들과는 다른 메소드를 사용해야 할때 ... (변경해야 할 지점이 많아진다. not good.)
+
+- Strategy Pattern 을 사용하면 각 객체에 타게팅 된 계산을 할 수 있다. 
