@@ -58,7 +58,9 @@ From Vaskaran Sarcar's book ***Java Design Patterns : A Tour with
     * 핵심 : 상속 기법을 사용하지 않고 객체의 기능을 확장하고 싶을 때 객체에 새로운 
     기능을 부여할 수 있는 Decorator 를 사용한다.
     
-* Ch6. Template Method Pattern
+* **Ch6. Template Method Pattern**
+  * 게임 회사에서 다양한 게임들을 개발하고 있다고 하자 ... Game 이라는 상위 추상 클래스를 만들어서 여러 다른 게임 클래스들이 이를 상속받는 식으로 만든다고 하자. 
+  * 이걸 Template method pattern 이라고 한다.
     
 * [Ch8. Adapter Pattern](./src/adapter)
     * [Adapter Pattern 설명](./src/adapter/adapter-pattern.md)
